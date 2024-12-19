@@ -6,10 +6,10 @@ Grupo 1, Subgrupo 8
 Integrantes: 
 
 Fábio Rocha Gomes Jardim
-FRANCISCO WENERSON LIMA SILVA
-IGOR DE EÇA ALMEIDA
-KAUAN LOPES DE JESUS
-LARISSA BATISTA DOS SANTOS
-LUIS GUILHERME COELHO SATURNINO
-LUIZ EDUARDO NASCIMENTO OLIVEIRA
-PAOLLA GISELLE RIBEIRO
+Francisco Wenerson Lima Silva
+Igor de Eça Almeida
+Kauan Lopes de Jesus
+Larissa Batista dos Santos
+Luis Guilherme Coelho Saturnino
+Luiz Eduardo Nascimento Oliveira
+Paolla Giselle Ribeiro
