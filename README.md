@@ -1,7 +1,7 @@
 Embarcatech - U3 - Linguagens e Ambientes de Programação
 Tarefa: Depuração e Versionamento (aula síncrona 16/12)
 
-Grupo 1, Sub 8 
+Grupo 1, Subgrupo 8 
 
 Integrantes: 
 
