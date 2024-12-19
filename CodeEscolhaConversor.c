@@ -24,6 +24,12 @@ void converterVolume() {
     printf("%.2f litros equivalem a %.2f mililitros.\n", litros, mililitros);
 }
 
+void converterVelocidade(){
+    float num, mph,kmh,ms;
+     printf("Digite o valor em metros por segundo: ");
+     scanf("%f", &ms);
+}
+
 int main() {
     int opcao;
 
