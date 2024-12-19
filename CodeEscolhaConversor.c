@@ -2,7 +2,7 @@
 
 void converterComprimento() {
     float metros, quilometros;
-    printf("Digite o valor em metros: ");
+    printf("Digite o valor em metros, por favor: ");
     scanf("%f", &metros);
     quilometros = metros / 1000;
     printf("%.2f metros equivalem a %.2f quilômetros.\n", metros, quilometros);
