@@ -6,10 +6,17 @@ Grupo 1, Subgrupo 8
 Integrantes: 
 
 Fábio Rocha Gomes Jardim
+
 Francisco Wenerson Lima Silva
+
 Igor de Eça Almeida
+
 Kauan Lopes de Jesus
+
 Larissa Batista dos Santos
+
 Luis Guilherme Coelho Saturnino
+
 Luiz Eduardo Nascimento Oliveira
+
 Paolla Giselle Ribeiro
