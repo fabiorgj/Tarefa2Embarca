@@ -1,38 +1,36 @@
 #include <stdio.h>
 
-void converterComprimento() {
-    float metros, quilometros;
-    printf("Digite o valor em metros, por favor: ");
-    scanf("%f", &metros);
-    quilometros = metros / 1000;
-    printf("%.2f metros equivalem a %.2f quilômetros.\n", metros, quilometros);
-}
+void converterComprimento() {}
 
-void converterMassa() {
-    float gramas, quilogramas;
-    printf("Digite o valor em gramas: ");
-    scanf("%f", &gramas);
-    quilogramas = gramas / 1000;
-    printf("%.2f gramas equivalem a %.2f quilogramas.\n", gramas, quilogramas);
-}
+void converterMassa() {}
 
-void converterVolume() {
-    float litros, mililitros;
-    printf("Digite o valor em litros: ");
-    scanf("%f", &litros);
-    mililitros = litros * 1000;
-    printf("%.2f litros equivalem a %.2f mililitros.\n", litros, mililitros);
-}
+void converterVolume() {}
+
+void converterTemperatura() {}
+
+void converterVelocidade() {}
+
+void converterPotencia() {}
+
+void converterArea() {}
+
+void converterTempo() {}
 
 int main() {
     int opcao;
 
-    printf("Escolha uma opção de conversor de unidade:\n");
-    printf("1. Comprimento (metros para quilômetros)\n");
-    printf("2. Massa (gramas para quilogramas)\n");
-    printf("3. Volume (litros para mililitros)\n");
-    printf("Digite sua escolha: ");
+    printf("Escolha o número referente a uma das opções de conversão a seguir:\n");
+    printf("1. Comprimento (cm, m, Km)\n");
+    printf("2. Massa (gramas, quilogramas, toneladas)\n");
+    printf("3. Volume (ml, dl, L)\n");
+    printf("4. Temperatura (C, F, K)\n");
+    printf("5. Velocidade (km/h, m/s, mph)\n");
+    printf("6. Potência (W, KW, Hp)\n");
+    printf("7. Área (milimetro quadrado, centimetro quadrado, metro quadrado)\n");
+    printf("8. Tempo (segundos, minutos, horas)\n");
+    printf("\nDigite sua escolha: ");
     scanf("%d", &opcao);
+    printf("\n \n");
 
     switch(opcao) {
         case 1:
@@ -43,6 +41,21 @@ int main() {
             break;
         case 3:
             converterVolume();
+            break;
+        case 4:
+            converterTemperatura();
+            break;
+        case 5:
+            converterVelocidade();
+            break;
+        case 6:
+            converterPotencia();
+            break;
+        case 7:
+            converterArea();
+            break;
+        case 8:
+            converterTempo();
             break;
         default:
             printf("Opção inválida. Tente novamente.\n");
