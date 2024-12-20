@@ -9,22 +9,28 @@ void converterVolume() {}
 void converterTemperatura() {}
 
 void converterVelocidade() {
-    int opcao, ms, kmh, mph;
+    int opcao;
+    float ms, kmh, mph;
     printf("Escolha qual conversão deseja fazer\n");
-    printf("1- m/s para km/h");
-    printf("2- m/s para mph");
-    printf("3- km/h para m/s");
-    printf("4- km/h para mph");
-    printf("5- mph para m/s");
-    printf("6- mph para km/h");
-
-    switch (opcao)
-    {
+    printf("1- m/s para km/h \n");
+    printf("2- m/s para mph \n");
+    printf("3- km/h para m/s \n");
+    printf("4- km/h para mph \n");
+    printf("5- mph para m/s  \n");
+    printf("6- mph para km/h \n");
+    scanf("%d", &opcao);
+    switch (opcao){
     case 1:
-        /* code */
+        printf("Insira o valor");
+        scanf("%f", &ms);
+        kmh = ms*3.6;
+        printf("%f m/s equivale a %f km/h \n", ms, kmh);
         break;
     case 2:
-        /* code */
+         printf("Insira o valor");
+        scanf("%f", &ms);
+        mph = ms*2.237;
+        printf("%f m/s equivale a %f mph \n", ms, mph);
         break;
 
     case 3:
