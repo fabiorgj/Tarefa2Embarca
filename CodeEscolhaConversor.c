@@ -8,7 +8,43 @@ void converterVolume() {}
 
 void converterTemperatura() {}
 
-void converterVelocidade() {}
+void converterVelocidade() {
+    int opcao, ms, kmh, mph;
+    printf("Escolha qual conversão deseja fazer\n");
+    printf("1- m/s para km/h");
+    printf("2- m/s para mph");
+    printf("3- km/h para m/s");
+    printf("4- km/h para mph");
+    printf("5- mph para m/s");
+    printf("6- mph para km/h");
+
+    switch (opcao)
+    {
+    case 1:
+        /* code */
+        break;
+    case 2:
+        /* code */
+        break;
+
+    case 3:
+        /* code */
+        break;    
+    
+    case 4:
+        /* code */
+        break;
+    case 5:
+        /* code */
+        break;
+    case 6:
+        /* code */
+        break;
+    default:
+    printf("Opção inválida");
+        break;
+    }
+}
 
 void converterPotencia() {}
 
