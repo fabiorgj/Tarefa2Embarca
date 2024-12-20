@@ -34,11 +34,17 @@ void converterVelocidade() {
         break;
 
     case 3:
-        /* code */
+        printf("Insira o valor");
+        scanf("%f", &kmh);
+        ms = kmh/3.6;
+        printf("%f km/h equivale a %f m/s \n", kmh, ms);
         break;    
     
     case 4:
-        /* code */
+        printf("Insira o valor");
+        scanf("%f", &kmh);
+        mph = kmh/1.609;
+        printf("%f km/h equivale a %f mph \n", kmh, mph);
         break;
     case 5:
         /* code */
