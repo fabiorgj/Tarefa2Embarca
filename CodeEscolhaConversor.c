@@ -8,7 +8,61 @@ void converterVolume() {}
 
 void converterTemperatura() {}
 
-void converterVelocidade() {}
+void converterVelocidade() {
+    int opcao;
+    float ms, kmh, mph;
+    printf("Escolha qual conversao deseja fazer\n");
+    printf("1- m/s para km/h \n");
+    printf("2- m/s para mph \n");
+    printf("3- km/h para m/s \n");
+    printf("4- km/h para mph \n");
+    printf("5- mph para m/s  \n");
+    printf("6- mph para km/h \n");
+    scanf("%d", &opcao);
+    switch (opcao){
+    case 1:
+        printf("Insira o valor\n");
+        scanf("%f", &ms);
+        kmh = ms*3.6;
+        printf("%.4f m/s equivale a %.4f km/h \n", ms, kmh);
+        break;
+    case 2:
+         printf("Insira o valor\n");
+        scanf("%f", &ms);
+        mph = ms*2.237;
+        printf("%.4f m/s equivale a %.4f mph \n", ms, mph);
+        break;
+
+    case 3:
+        printf("Insira o valor\n");
+        scanf("%f", &kmh);
+        ms = kmh/3.6;
+        printf("%.4f km/h equivale a %.4f m/s \n", kmh, ms);
+        break;    
+    
+    case 4:
+        printf("Insira o valor\n");
+        scanf("%f", &kmh);
+        mph = kmh/1.609;
+        printf("%.4f km/h equivale a %.4f mph \n", kmh, mph);
+        break;
+    case 5:
+       printf("Insira o valor\n");
+        scanf("%f", &mph);
+        ms = mph/2.237;
+        printf("%.4f mph equivale a %.4f m/s \n", mph, ms);
+        break;
+    case 6:
+        printf("Insira o valor\n");
+        scanf("%f", &mph);
+        kmh = mph*1.609;
+        printf("%.4f mph equivale a %.4f km/h \n", mph, kmh);
+        break;
+    default:
+    printf("Opção inválida\n");
+        break;
+    }
+}
 
 void converterPotencia() {}
 
