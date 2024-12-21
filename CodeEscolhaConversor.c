@@ -202,7 +202,7 @@ void converterVelocidade() {
 void converterPotencia() {}
 
 
-//converter ´Área
+//converter Área
 void converterArea() {
     int opcao;
     float unidade, convertido;
