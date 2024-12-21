@@ -52,6 +52,7 @@ int main() {
 void converterComprimento() {
    int opcao;
    float m,mm,cm;
+   float unidade,convertido;
    printf("Escolha qual conversao deseja fazer:\n");
    printf("1- m para cm \n");
    printf("2- m para mm\n");
@@ -59,60 +60,48 @@ void converterComprimento() {
    printf("4- cm para mm\n");
    printf("5- mm para m\n");
    printf("6- mm para cm\n");
-   printf("7-SAIR");
+   printf("7-SAIR\n");
    scanf("%d",&opcao);
    switch(opcao){
       case 1:
-         float unidade;
          printf("Digite o valor em m(metro):\n");
          scanf("%f",&unidade);
-         float convertido;
          convertido=unidade*100;
          printf("O valor em metros:%.2f em cent�metros �:%.2f",unidade,convertido);
          break;
 
       
       case 2:
-         float unidade;
          printf("Digite o valor em m(metro):\n");
          scanf("%f",&unidade);
-         float convertido;
          convertido=unidade*1000;
          printf("O valor em metros:%.2f em mil�metros �:%.2f",unidade,convertido);
          break;
 
       case 3:
-        float unidade;
         printf("Digite o valor em cm(cent�metro):\n");
         scanf("%f",&unidade);
-        float convertido;
         convertido=unidade/100;
         printf("O valor em cent�metros:%.2f em metros �:%.2f",unidade,convertido);
         break;
 
       case 4:
-        float unidade;
         printf("Digite o valor em cm(cent�metro):\n");
         scanf("%f",&unidade);
-        float convertido;
         convertido=unidade*10;
         printf("O valor em cent�metros:%.2f em mil�metros �:%.2f",unidade,convertido);
         break;
 
       case 5:
-        float unidade;
         printf("Digite o valor em mm(mil�metro):\n");
         scanf("%f",&unidade);
-        float convertido;
         convertido=unidade/1000;
         printf("O valor em mil�metros:%.2f em metros �:%.2f",unidade,convertido);
         break;
 
       case 6:
-        float unidade;
         printf("Digite o valor em mm(mil�metro):\n");
         scanf("%f",&unidade);
-        float convertido;
         convertido=unidade/10;
         printf("O valor em mil�metros:%.2f em cent�metros �:%.2f",unidade,convertido);
         break;
@@ -130,6 +119,7 @@ void converterComprimento() {
 void converterMassa() {
    int opcao;
    float m,mm,cm;
+   float unidade,convertido;
    printf("Escolha qual conversao deseja fazer:\n");
    printf("1- kg para g \n");
    printf("2- kg para tonelada\n");
@@ -137,59 +127,47 @@ void converterMassa() {
    printf("4- g para tonelada\n");
    printf("5- tonelada para kg\n");
    printf("6- tonelada para g\n");
-   printf("7-SAIR");
+   printf("7-SAIR\n");
    scanf("%d",&opcao);
    switch(opcao){
       case 1:
-        float unidade;
         printf("Digite o valor em kg(quilograma):\n");
         scanf("%f",&unidade);
-        float convertido;
         convertido=unidade*1000;
         printf("O valor em kg:%.2f em g �:%.2f",unidade,convertido);
         break;
       
       case 2:
-        float unidade;
         printf("Digite o valor em kg(quilograma):\n");
         scanf("%f",&unidade);
-        float convertido;
         convertido=unidade/1000;
         printf("O valor em kg:%.2f em toneladas �:%.2f",unidade,convertido);
         break;
 
       case 3:
-        float unidade;
         printf("Digite o valor em g(grama):\n");
         scanf("%f",&unidade);
-        float convertido;
         convertido=unidade/1000;
         printf("O valor em g:%.2f em kg �:%.2f",unidade,convertido);
         break;
 
       case 4:
-        float unidade;
         printf("Digite o valor em g(grama):\n");
         scanf("%f",&unidade);
-        float convertido;
         convertido=unidade/1000000;
         printf("O valor em g:%.2f em toneladas �:%.2f",unidade,convertido);
         break;
 
       case 5:
-        float unidade;
         printf("Digite o valor em ton(toneladas):\n");
         scanf("%f",&unidade);
-        float convertido;
         convertido=unidade*1000;
         printf("O valor em toneladas:%.2f em kg �:%.2f",unidade,convertido);
         break;
 
       case 6:
-        float unidade;
         printf("Digite o valor em ton(toneladas):\n");
         scanf("%f",&unidade);
-        float convertido;
         convertido=unidade*1000000;
         printf("O valor em toneladas:%.2f em g �:%.2f",unidade,convertido);
         break;
@@ -220,7 +198,7 @@ void converterVelocidade() {
     printf("4- km/h para mph \n");
     printf("5- mph para m/s  \n");
     printf("6- mph para km/h \n");
-    printf("7-SAIR");
+    printf("7-SAIR\n");
     scanf("%d", &opcao);
     switch (opcao){
     case 1:
