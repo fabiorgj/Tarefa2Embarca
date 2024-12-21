@@ -201,9 +201,141 @@ void converterVelocidade() {
 
 void converterPotencia() {}
 
-void converterArea() {}
 
-void converterTempo() {}
+//converter Area
+void converterArea() {
+    int opcao;
+    float unidade, convertido;
+
+    printf("Escolha qual conversao deseja fazer:\n");
+    printf("1- milimetro quadrado para centimetro quadrado \n");
+    printf("2- milimetro quadrado para metro quadrado\n");
+    printf("3- centimetro quadrado para milimetro quadrado\n");
+    printf("4- centimetro quadrado para metro quadrado\n");
+    printf("5- metro quadrado para milimetro quadrado\n");
+    printf("6- metro quadrado para centimetro quadrado\n");
+    printf("7-SAIR\n");
+    scanf("%d", &opcao);
+
+    switch(opcao) {
+        case 1:
+            printf("Digite o valor em mm2 (milimetro quadrado):\n");
+            scanf("%f", &unidade);
+            convertido = unidade / 100;
+            printf("O valor em mm2: %.4f em cm2: %.4f\n", unidade, convertido);
+            break;
+
+        case 2:
+            printf("Digite o valor em mm2 (milimetro quadrado):\n");
+            scanf("%f", &unidade);
+            convertido = unidade / 1000000;
+            printf("O valor em mm2: %.4f em m2: %.4f\n", unidade, convertido);
+            break;
+
+        case 3:
+            printf("Digite o valor em cm2 (centimetro quadrado):\n");
+            scanf("%f", &unidade);
+            convertido = unidade * 100;
+            printf("O valor em cm2: %.4f em mm2: %.4f\n", unidade, convertido);
+            break;
+
+        case 4:
+            printf("Digite o valor em cm2 (centimetro quadrado):\n");
+            scanf("%f", &unidade);
+            convertido = unidade / 10000;
+            printf("O valor em cm2: %.4f em m2: %.4f\n", unidade, convertido);
+            break;
+
+        case 5:
+            printf("Digite o valor em m2 (metro quadrado):\n");
+            scanf("%f", &unidade);
+            convertido = unidade * 1000000;
+            printf("O valor em m2: %.4f em mm2: %.4f\n", unidade, convertido);
+            break;
+
+        case 6:
+            printf("Digite o valor em m2 (metro quadrado):\n");
+            scanf("%f", &unidade);
+            convertido = unidade * 10000;
+            printf("O valor em m2: %.4f em cm2: %.4f\n", unidade, convertido);
+            break;
+
+        case 7:
+            printf("Obrigado, encerrando...\n");
+            break;
+
+        default:
+            printf("Opção inválida\n");
+            break;
+    }
+}
+//converter Tempo
+void converterTempo() {
+    int opcao;
+    float unidade, convertido;
+
+    printf("Escolha qual conversao deseja fazer:\n");
+    printf("1- Segundos para Minutos \n");
+    printf("2- Segundos para Horas \n");
+    printf("3- Minutos para Segundos \n");
+    printf("4- Minutos para Horas \n");
+    printf("5- Horas para Segundos \n");
+    printf("6- Horas para Minutos \n");
+    printf("7-SAIR\n");
+    scanf("%d", &opcao);
+
+    switch(opcao) {
+        case 1:
+            printf("Digite o valor em segundos:\n");
+            scanf("%f", &unidade);
+            convertido = unidade / 60;
+            printf("%.2f segundos equivalem a %.2f minutos\n", unidade, convertido);
+            break;
+
+        case 2:
+            printf("Digite o valor em segundos:\n");
+            scanf("%f", &unidade);
+            convertido = unidade / 3600;
+            printf("%.2f segundos equivalem a %.2f horas\n", unidade, convertido);
+            break;
+
+        case 3:
+            printf("Digite o valor em minutos:\n");
+            scanf("%f", &unidade);
+            convertido = unidade * 60;
+            printf("%.2f minutos equivalem a %.2f segundos\n", unidade, convertido);
+            break;
+
+        case 4:
+            printf("Digite o valor em minutos:\n");
+            scanf("%f", &unidade);
+            convertido = unidade / 60;
+            printf("%.2f minutos equivalem a %.2f horas\n", unidade, convertido);
+            break;
+
+        case 5:
+            printf("Digite o valor em horas:\n");
+            scanf("%f", &unidade);
+            convertido = unidade * 3600;
+            printf("%.2f horas equivalem a %.2f segundos\n", unidade, convertido);
+            break;
+
+        case 6:
+            printf("Digite o valor em horas:\n");
+            scanf("%f", &unidade);
+            convertido = unidade * 60;
+            printf("%.2f horas equivalem a %.2f minutos\n", unidade, convertido);
+            break;
+
+        case 7:
+            printf("ENCERRANDO...\n");
+            break;
+
+        default:
+            printf("Opção inválida\n");
+            break;
+    }
+}
 
 int main() {
     int opcao;
