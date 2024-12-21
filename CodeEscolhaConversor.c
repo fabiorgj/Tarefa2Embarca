@@ -1,5 +1,14 @@
 #include <stdio.h>
 
+//converter Potência
+void converterPotencia() {}
+
+//converter Volume
+void converterVolume() {}
+
+//converter Temperatura
+void converterTemperatura() {}
+
 //converter Comprimento
 void converterComprimento() {
    int opcao;
@@ -132,12 +141,6 @@ void converterMassa() {
    }
 }
 
-//converter Volume
-void converterVolume() {}
-
-//converter Temperatura
-void converterTemperatura() {}
-
 //converter Velocidade;
 void converterVelocidade() {
     int opcao;
@@ -198,9 +201,6 @@ void converterVelocidade() {
         break;
     }
 }
-
-void converterPotencia() {}
-
 
 //converter Área
 void converterArea() {
