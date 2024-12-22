@@ -18,7 +18,15 @@ void converterTemperatura() {
     printf("5- Celsius para Kelvin\n");
     printf("6- Kelvin para Celsius\n");
     printf("7-SAIR\n");
+
     scanf("%d",&opcao);
+    while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
+    {
+        printf("Tente novamente digitando uma opção válida: ");
+        scanf("%d",&opcao);
+    }
+    
+    
     switch(opcao){
         case 1:
             printf("Digite o valor em Celsius:\n");
@@ -65,9 +73,6 @@ void converterTemperatura() {
         case 7:
             printf("ENCERRANDO...");
             break;
-        default:
-            printf("Opção inválida\n");
-            break;
     }
 }
 
@@ -84,7 +89,14 @@ void converterComprimento() {
    printf("5- mm para m\n");
    printf("6- mm para cm\n");
    printf("7-SAIR\n");
+
    scanf("%d",&opcao);
+   while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
+    {
+        printf("Tente novamente digitando uma opção válida: ");
+        scanf("%d",&opcao);
+    }
+   
    switch(opcao){
       case 1:
          printf("Digite o valor em m(metro):\n");
@@ -131,9 +143,6 @@ void converterComprimento() {
       case 7:
         printf("ENCERRANDO...");
         break;
-      default:
-        printf("Opção inválida\n");
-        break;
    }
 }
 
@@ -150,7 +159,14 @@ void converterMassa() {
    printf("5- tonelada para kg\n");
    printf("6- tonelada para g\n");
    printf("7-SAIR\n");
+
    scanf("%d",&opcao);
+   while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
+    {
+        printf("Tente novamente digitando uma opção válida: ");
+        scanf("%d",&opcao);
+    }
+
    switch(opcao){
       case 1:
         printf("Digite o valor em kg(quilograma):\n");
@@ -197,9 +213,6 @@ void converterMassa() {
       case 7:
         printf("ENCERRANDO...");
         break;
-      default:
-        printf("Opção inválida\n");
-        break;
    }
 }
 
@@ -215,7 +228,14 @@ void converterVelocidade() {
     printf("5- mph para m/s  \n");
     printf("6- mph para km/h \n");
     printf("7-SAIR\n");
+
     scanf("%d", &opcao);
+    while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
+    {
+        printf("Tente novamente digitando uma opção válida: ");
+        scanf("%d",&opcao);
+    }
+
     switch (opcao){
     case 1:
         printf("Insira o valor\n");
@@ -258,9 +278,6 @@ void converterVelocidade() {
    case 7:
         printf("ENCERRANDO...");
         break;
-    default:
-    printf("Opção inválida\n");
-        break;
     }
 }
 
@@ -277,7 +294,13 @@ void converterArea() {
     printf("5- metro quadrado para milimetro quadrado\n");
     printf("6- metro quadrado para centimetro quadrado\n");
     printf("7-SAIR\n");
+
     scanf("%d", &opcao);
+    while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
+    {
+        printf("Tente novamente digitando uma opção válida: ");
+        scanf("%d",&opcao);
+    }
 
     switch(opcao) {
         case 1:
@@ -325,10 +348,6 @@ void converterArea() {
         case 7:
             printf("Obrigado, encerrando...\n");
             break;
-
-        default:
-            printf("Opção inválida\n");
-            break;
     }
 }
 //converter Tempo
@@ -344,7 +363,13 @@ void converterTempo() {
     printf("5- Horas para Segundos \n");
     printf("6- Horas para Minutos \n");
     printf("7-SAIR\n");
+
     scanf("%d", &opcao);
+    while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
+    {
+        printf("Tente novamente digitando uma opção válida: ");
+        scanf("%d",&opcao);
+    }
 
     switch(opcao) {
         case 1:
@@ -392,10 +417,6 @@ void converterTempo() {
         case 7:
             printf("ENCERRANDO...\n");
             break;
-
-        default:
-            printf("Opção inválida\n");
-            break;
     }
 }
 
@@ -412,7 +433,14 @@ int main() {
     printf("7. Área (milimetro quadrado, centimetro quadrado, metro quadrado)\n");
     printf("8. Tempo (segundos, minutos, horas)\n");
     printf("\nDigite sua escolha: ");
+
     scanf("%d", &opcao);
+    while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7&&opcao!=8)
+    {
+        printf("Tente novamente digitando uma opção válida: ");
+        scanf("%d",&opcao);
+    }
+
     printf("\n \n");
 
     switch(opcao) {
@@ -440,9 +468,6 @@ int main() {
         case 8:
             converterTempo();
             break;
-        default:
-            printf("Opção inválida. Tente novamente.\n");
     }
-
     return 0;
 }
