@@ -7,7 +7,69 @@ void converterPotencia() {}
 void converterVolume() {}
 
 //converter Temperatura
-void converterTemperatura() {}
+void converterTemperatura() {
+    int opcao;
+    float temperatura,resultado;
+    printf("Escolha qual conversao deseja fazer:\n");
+    printf("1- Celsius para Fahrenheit \n");
+    printf("2- Fahrenheit para Celsius\n");
+    printf("3- Fahrenheit para Kelvin\n");
+    printf("4- Kelvin para Fahrenheit\n");
+    printf("5- Celsius para Kelvin\n");
+    printf("6- Kelvin para Celsius\n");
+    printf("7-SAIR\n");
+    scanf("%d",&opcao);
+    switch(opcao){
+        case 1:
+            printf("Digite o valor em Celsius:\n");
+            scanf("%f",&temperatura);
+            resultado = (temperatura * 1.8) + 32;
+            printf("O valor em Celsius:%.2f em Fahrenheit �:%.2f",temperatura,resultado);
+            break;
+        
+        case 2:
+            printf("Digite o valor em Fahrenheit:\n");
+            scanf("%f",&temperatura);
+            resultado=(temperatura - 32)/1.8;
+            printf("O valor em Fahrenheit:%.2f em Celsius�:%.2f",temperatura,resultado);
+            break;
+
+        case 3:
+            printf("Digite o valor em Fahrenheit:\n");
+            scanf("%f",&temperatura);
+            resultado=(temperatura - 32) / 1.8 + 273.15;
+            printf("O valor em Fahrenheit:%.2f em Kelvin �:%.2f",temperatura,resultado);
+            break;
+
+        case 4:
+            printf("Digite o valor em Kelvin:\n");
+            scanf("%f",&temperatura);
+            resultado=(temperatura - 273.15) * 1.8 + 32;
+            printf("O valor em Kelvin:%.2f em Fahrenheit �:%.2f",temperatura,resultado);
+            break;
+
+        case 5:
+            printf("Digite o valor em Celsius:\n");
+            scanf("%f",&temperatura);
+            resultado=temperatura + 273.15;
+            printf("O valor em Celsius:%.2f em Kelvin �:%.2f",temperatura,resultado);
+            break;
+
+        case 6:
+            printf("Digite o valor em Kelvin:\n");
+            scanf("%f",&temperatura);
+            resultado=temperatura - 273.15;
+            printf("O valor em Kelvin:%.2f em Celsius �:%.2f",temperatura,resultado);
+            break;
+
+        case 7:
+            printf("ENCERRANDO...");
+            break;
+        default:
+            printf("Opção inválida\n");
+            break;
+    }
+}
 
 //converter Comprimento
 void converterComprimento() {
