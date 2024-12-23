@@ -24,10 +24,12 @@ void converterTemperatura() {
 
     scanf("%d",&opcao);
 
+
     //Validação de entrada do usuario
     while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
     {
         printf("Tente novamente digitando uma opção válida:\n");
+
         scanf("%d",&opcao);
     }
     
@@ -77,7 +79,9 @@ void converterTemperatura() {
 
         case 7:
             printf("ENCERRANDO...");
+
             continue;
+
     }
     }
     
@@ -103,10 +107,12 @@ void converterComprimento() {
 
    scanf("%d",&opcao);
 
+
    //Validação de entrada do usuario
    while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
     {
         printf("Tente novamente digitando uma opção válida:\n");
+
         scanf("%d",&opcao);
     }
    
@@ -155,8 +161,10 @@ void converterComprimento() {
       
       case 7:
         printf("ENCERRANDO...");
+
         continue;
    }
+
    }
    
 
@@ -164,6 +172,7 @@ void converterComprimento() {
 
 //converter Massa
 void converterMassa() {
+
     int opcao = 0;
     float m,mm,cm;
     float unidade,convertido;
@@ -185,6 +194,7 @@ void converterMassa() {
    while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
     {
         printf("Tente novamente digitando uma opção válida:\n");
+
         scanf("%d",&opcao);
     }
 
@@ -233,7 +243,9 @@ void converterMassa() {
 
       case 7:
         printf("ENCERRANDO...");
+
         continue;
+
    }
     }
     
@@ -258,10 +270,12 @@ void converterVelocidade() {
 
     scanf("%d", &opcao);
 
+
     //Validação de entrada do usuario
     while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
     {
         printf("Tente novamente digitando uma opção válida:\n");
+
         scanf("%d",&opcao);
     }
 
@@ -306,7 +320,9 @@ void converterVelocidade() {
         continue;
    case 7:
         printf("ENCERRANDO...");
+
         continue;
+
     }
     }
     
@@ -330,6 +346,11 @@ void converterArea() {
     printf("7-SAIR\n");
 
     scanf("%d", &opcao);
+    while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
+    {
+        printf("Tente novamente digitando uma opção válida: ");
+        scanf("%d",&opcao);
+    }
 
     //Validação de entrada do usuario
     while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
@@ -383,8 +404,10 @@ void converterArea() {
 
         case 7:
             printf("Obrigado, encerrando...\n");
+
             continue;
     }
+
     }
     
 
@@ -406,6 +429,11 @@ void converterTempo() {
     printf("7-SAIR\n");
 
     scanf("%d", &opcao);
+    while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
+    {
+        printf("Tente novamente digitando uma opção válida: ");
+        scanf("%d",&opcao);
+    }
 
     //Validação de entrada do usuario
     while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7)
@@ -459,8 +487,10 @@ void converterTempo() {
 
         case 7:
             printf("ENCERRANDO...\n");
+
             continue;
     }
+
     }
     
 
@@ -480,6 +510,7 @@ int main() {
     printf("6. Potência (W, KW, Hp)\n");
     printf("7. Área (milimetro quadrado, centimetro quadrado, metro quadrado)\n");
     printf("8. Tempo (segundos, minutos, horas)\n");
+
     printf("9. SAIR\n");
     printf("Digite sua escolha:\n");
 
@@ -489,6 +520,7 @@ int main() {
     while (opcao!=1&&opcao!=2&&opcao!=3&&opcao!=4&&opcao!=5&&opcao!=6&&opcao!=7&&opcao!=8&&opcao!=9)
     {
         printf("Tente novamente digitando uma opção válida:\n");
+
         scanf("%d",&opcao);
     }
 
@@ -518,8 +550,10 @@ int main() {
             continue;
         case 8:
             converterTempo();
+
             continue;
         case 9:
+
     }
     return 0;
     }
