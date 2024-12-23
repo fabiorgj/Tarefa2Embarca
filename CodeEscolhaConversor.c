@@ -235,8 +235,7 @@ void converterComprimento() {
         continue;
    }
 
-   }
-   
+   }   
 
 }
 
@@ -557,12 +556,10 @@ void converterTempo() {
 
         case 7:
             printf("ENCERRANDO...\n");
-
             continue;
     }
 
-    }
-    
+    }    
 
 }
 
@@ -580,10 +577,9 @@ int main() {
     printf("6. Potência (W, KW, Hp)\n");
     printf("7. Área (milimetro quadrado, centimetro quadrado, metro quadrado)\n");
     printf("8. Tempo (segundos, minutos, horas)\n");
-
     printf("9. SAIR\n");
+    
     printf("Digite sua escolha:\n");
-
     scanf("%d", &opcao);
 
     //Validação de entrada do usuario
@@ -623,10 +619,8 @@ int main() {
 
             continue;
         case 9:
-
+            break;
     }
     return 0;
     }
-    
-
 }
