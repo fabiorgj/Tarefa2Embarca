@@ -1,7 +1,77 @@
 #include <stdio.h>
 
 //converter Potência
-void converterPotencia() {}
+void converterPotencia() {
+    int opcao = 0;
+    float potencia, resultado;
+
+    while (opcao != 7) {
+        printf("Escolha qual conversão deseja fazer:\n");
+        printf("1 - Watts para Horsepower (HP)\n");
+        printf("2 - Horsepower (HP) para Watts\n");
+        printf("3 - Watts para BTU/h\n");
+        printf("4 - BTU/h para Watts\n");
+        printf("5 - Horsepower (HP) para BTU/h\n");
+        printf("6 - BTU/h para Horsepower (HP)\n");
+        printf("7 - SAIR\n");
+
+        scanf("%d", &opcao);
+
+        // Validação de entrada do usuário
+        while (opcao < 1 || opcao > 7) {
+            printf("Opção inválida. Tente novamente:\n");
+            scanf("%d", &opcao);
+        }
+
+        switch (opcao) {
+            case 1:
+                printf("Digite o valor em Watts:\n");
+                scanf("%f", &potencia);
+                resultado = potencia / 745.7; // 1 HP ≈ 745.7 W
+                printf("O valor em Watts: %.2f W em Horsepower é: %.2f HP\n", potencia, resultado);
+                continue;
+
+            case 2:
+                printf("Digite o valor em Horsepower:\n");
+                scanf("%f", &potencia);
+                resultado = potencia * 745.7; // 1 HP ≈ 745.7 W
+                printf("O valor em Horsepower: %.2f HP em Watts é: %.2f W\n", potencia, resultado);
+                continue;
+
+            case 3:
+                printf("Digite o valor em Watts:\n");
+                scanf("%f", &potencia);
+                resultado = potencia * 3.412; // 1 W ≈ 3.412 BTU/h
+                printf("O valor em Watts: %.2f W em BTU/h é: %.2f BTU/h\n", potencia, resultado);
+                continue;
+
+            case 4:
+                printf("Digite o valor em BTU/h:\n");
+                scanf("%f", &potencia);
+                resultado = potencia / 3.412; // 1 W ≈ 3.412 BTU/h
+                printf("O valor em BTU/h: %.2f BTU/h em Watts é: %.2f W\n", potencia, resultado);
+                continue;
+
+            case 5:
+                printf("Digite o valor em Horsepower:\n");
+                scanf("%f", &potencia);
+                resultado = potencia * 2544.43; // 1 HP ≈ 2544.43 BTU/h
+                printf("O valor em Horsepower: %.2f HP em BTU/h é: %.2f BTU/h\n", potencia, resultado);
+                continue;
+
+            case 6:
+                printf("Digite o valor em BTU/h:\n");
+                scanf("%f", &potencia);
+                resultado = potencia / 2544.43; // 1 HP ≈ 2544.43 BTU/h
+                printf("O valor em BTU/h: %.2f BTU/h em Horsepower é: %.2f HP\n", potencia, resultado);
+                continue;
+
+            case 7:
+                printf("ENCERRANDO...\n");
+                break;
+        }
+    }
+}
 
 //converter Volume
 void converterVolume() {}
@@ -165,8 +235,7 @@ void converterComprimento() {
         continue;
    }
 
-   }
-   
+   }   
 
 }
 
@@ -487,12 +556,10 @@ void converterTempo() {
 
         case 7:
             printf("ENCERRANDO...\n");
-
             continue;
     }
 
-    }
-    
+    }    
 
 }
 
@@ -510,10 +577,9 @@ int main() {
     printf("6. Potência (W, KW, Hp)\n");
     printf("7. Área (milimetro quadrado, centimetro quadrado, metro quadrado)\n");
     printf("8. Tempo (segundos, minutos, horas)\n");
-
     printf("9. SAIR\n");
+    
     printf("Digite sua escolha:\n");
-
     scanf("%d", &opcao);
 
     //Validação de entrada do usuario
@@ -553,10 +619,8 @@ int main() {
 
             continue;
         case 9:
-
+            break;
     }
     return 0;
     }
-    
-
 }
