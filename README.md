@@ -16,7 +16,7 @@ Paolla Giselle Ribeiro
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-## ESCRIÇÃO DO PROGRAMA 
+## DESCRIÇÃO DO PROGRAMA 
 
 O programa é um conversor de unidades. Ele permite ao usuário converter entre diferentes unidades de medida em várias categorias: volume, potência, temperatura, comprimento, massa, velocidade, área e tempo.
 
