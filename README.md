@@ -5,6 +5,7 @@ Grupo 1, Subgrupo 8
 
 ## Integrantes: 
 
+
 Fábio Rocha Gomes Jardim  
 Francisco Wenerson Lima Silva  
 Igor de Eça Almeida  
@@ -14,13 +15,10 @@ Luis Guilherme Coelho Saturnino
 Luiz Eduardo Nascimento Oliveira  
 Paolla Giselle Ribeiro  
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
-
 ## DESCRIÇÃO DO PROGRAMA 
 
 O programa é um conversor de unidades. Ele permite ao usuário converter entre diferentes unidades de medida em várias categorias: volume, potência, temperatura, comprimento, massa, velocidade, área e tempo.
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
 
 ## ESTRUTURA DO PROGRAMA
 
@@ -41,7 +39,6 @@ Exibe um menu principal que permite ao usuário escolher a categoria de convers�
 Cada opção do menu chama a função correspondente para realizar a conversão desejada.  
 O programa continua executando até que o usuário escolha a opção de sair.  
 
-///////////////////////////////////////////////////////////////////////////////////////////////////
 
 ## FUNCIONAMENTO
 
