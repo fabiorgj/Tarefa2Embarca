@@ -14,7 +14,56 @@
 #include <stdio.h>
 
 // converter Volume
-void converterVolume() {}
+void converterVolume()
+{
+    int opcao = 0;
+    float volume, resultado;
+
+    while (opcao != 4)
+    {
+        printf("Escolha qual conversão deseja fazer:\n");
+        printf("1 - Litros para Mililitros\n");
+        printf("2 - Mililitros para Litros\n");
+        printf("3 - Litros para Metros Cúbicos\n");
+        printf("4 - SAIR\n");
+
+        scanf("%d", &opcao);
+
+        while (opcao < 1 || opcao > 4)
+        {
+            printf("Opção inválida. Tente novamente:\n");
+            scanf("%d", &opcao);
+        }
+
+        switch (opcao)
+        {
+        case 1:
+            printf("Digite o valor em Litros:\n");
+            scanf("%f", &volume);
+            resultado = volume * 1000; 
+            printf("O valor em Litros: %.2f L em Mililitros é: %.2f mL\n", volume, resultado);
+            continue;
+
+        case 2:
+            printf("Digite o valor em Mililitros:\n");
+            scanf("%f", &volume);
+            resultado = volume / 1000; 
+            printf("O valor em Mililitros: %.2f mL em Litros é: %.2f L\n", volume, resultado);
+            continue;
+
+        case 3:
+            printf("Digite o valor em Litros:\n");
+            scanf("%f", &volume);
+            resultado = volume / 1000; 
+            printf("O valor em Litros: %.2f L em Metros Cúbicos é: %.6f m³\n", volume, resultado);
+            continue;
+
+        case 4:
+            printf("ENCERRANDO...\n");
+            break;
+        }
+    }
+}
 
 // converter Potência
 void converterPotencia()
