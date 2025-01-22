@@ -6,7 +6,7 @@ Grupo 1, Subgrupo 8
 ## Integrantes: 
 
 
-Fábio Rocha Gomes Jardim  (Líder)
+Fábio Rocha Gomes Jardim  (Líder)  
 Francisco Wenerson Lima Silva  
 Igor de Eça Almeida  
 Kauan Lopes de Jesus  
